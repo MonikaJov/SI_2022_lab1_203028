@@ -1,0 +1,125 @@
+git init
+3.
+git remote add origin https://github.com/MonikaJov/SI_2022_lab1_203028
+git checkout -b master
+4.
+git clone https://github.com/MonikaJov/SI_2022_lab1_203028
+5.
+touch shopping_list.txt
+git add shopping_list.txt
+git status
+git commit -m 'Add 5 items to the shopping list'
+6.
+git commit -a -m 'Add quantities to the items.'
+7.
+git checkout -b branch1
+git checkout -b branch2
+8.
+git log
+commit 1663a1fcc16040e2b29359580c950690c984abcf (HEAD -> branch2, master, branch1)
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:36:31 2022 +0200
+
+    Add quantities to the items.
+
+commit a706818aa247350f22e23b0759f17d5624108d51
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:32:25 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 4cfe7e7c02de8879425f24fffc047f402b762e15 (origin/master, origin/HEAD)
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Wed Apr 6 18:50:45 2022 +0200
+
+    Update README.md
+9.
+git push --all
+10.
+git checkout branch1
+11.
+git commit -a -m 'Change quantity of item #5'
+12.
+git checkout master
+13.
+git commit -a -m 'Change quantity of item #2.'
+14.
+git push --all
+15.
+git checkout branch2
+16.
+git commit -a -m "Modify item #4"
+17.
+git log
+commit 1902bc5ed71582caa38626fac189cb769ed4ab78 (HEAD -> branch2)
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:55:27 2022 +0200
+
+    Modify item #4
+
+commit 1663a1fcc16040e2b29359580c950690c984abcf (origin/branch2)
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:36:31 2022 +0200
+
+    Add quantities to the items.
+
+commit a706818aa247350f22e23b0759f17d5624108d51
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:32:25 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 4cfe7e7c02de8879425f24fffc047f402b762e15
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Wed Apr 6 18:50:45 2022 +0200
+
+    Update README.md
+18.
+git commit -a -m 'add item #6'
+git rebase -i --root
+19.
+git log
+commit 6af0c170a729cff49628e5b7ab77580943f0a5ae (HEAD -> branch2)
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:55:27 2022 +0200
+
+    Modify item #4
+
+    add item #6
+
+    Modify item #4 and add item #6
+
+commit 1663a1fcc16040e2b29359580c950690c984abcf (origin/branch2)
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:36:31 2022 +0200
+
+    Add quantities to the items.
+
+commit a706818aa247350f22e23b0759f17d5624108d51
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Thu Apr 7 19:32:25 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 4cfe7e7c02de8879425f24fffc047f402b762e15
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Wed Apr 6 18:50:45 2022 +0200
+
+    Update README.md
+
+commit 2b8dca45873cc6919dfba2844acd3483c802c2fa
+Author: MonikaJov <86190069+MonikaJov@users.noreply.github.com>
+Date:   Wed Apr 6 18:49:33 2022 +0200
+
+    Initial commit
+20.
+git checkout master
+git merge branch1
+21.
+git merge --no-ff branch2 ->conflict
+git commit -a -m "solving merge commit"
+22.
+git add .
+git commit -m "Add docs"
+23.
+git push --all

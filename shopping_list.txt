@@ -2,4 +2,4 @@ milk x 1
 chocolate x 2
 bananas x 3
 tea x 2
-toothpaste x 1
+toothpaste x 4

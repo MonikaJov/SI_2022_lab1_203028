@@ -1,5 +1,6 @@
 milk x 1
-chocolate x 2
+chocolate x 3
 bananas x 3
-tea x 2
-toothpaste x 1
+coffee x 2
+toothpaste x 4
+beer
